@@ -16,9 +16,10 @@ dependencies {
     }
 
     // Mapbox Android Services (Telemetry support)
-    compile(rootProject.ext.dep.mapboxAndroidTelemetry) {
-        transitive = true
-    }
+    compile(name: 'libandroid-telemetry', ext: 'aar')
+//    compile(rootProject.ext.dep.mapboxAndroidTelemetry) {
+//        transitive = true
+//    }
 }
 
 android {
