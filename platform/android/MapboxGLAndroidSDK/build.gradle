@@ -107,6 +107,9 @@ android {
     sourceSets {
         // limit amount of exposed library resources
         main.res.srcDirs += 'src/main/res-public'
+        main {
+            jni.srcDirs = []
+        }
     }
 
     compileOptions {
